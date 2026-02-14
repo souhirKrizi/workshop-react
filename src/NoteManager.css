@@ -1,0 +1,117 @@
+.note-manager {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.note-manager h2 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.note-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.note-input:focus {
+  outline: none;
+  border-color: #2196F3;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-add {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-add:hover {
+  background-color: #45a049;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-delete:hover {
+  background-color: #da190b;
+}
+
+.average-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #e3f2fd;
+  border-radius: 5px;
+  border-left: 4px solid #2196F3;
+}
+
+.average-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.average-value {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2196F3;
+}
+
+.note-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.note-value {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  min-width: 50px;
+  text-align: center;
+}
+
+.empty-message {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin-top: 20px;
+}

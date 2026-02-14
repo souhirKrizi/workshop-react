@@ -1,0 +1,59 @@
+.counter-container {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  max-width: 300px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+}
+
+.counter-container h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.counter-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.counter-buttons button:nth-child(1) {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.counter-buttons button:nth-child(1):hover {
+  background-color: #45a049;
+}
+
+.counter-buttons button:nth-child(2) {
+  background-color: #f44336;
+  color: white;
+}
+
+.counter-buttons button:nth-child(2):hover {
+  background-color: #da190b;
+}
+
+.counter-buttons button:nth-child(3) {
+  background-color: #ff9800;
+  color: white;
+}
+
+.counter-buttons button:nth-child(3):hover {
+  background-color: #e68900;
+}

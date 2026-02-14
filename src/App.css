@@ -1,0 +1,36 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+.App {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.exercises-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.exercise {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .exercises-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .App h1 {
+    font-size: 2rem;
+  }
+}
