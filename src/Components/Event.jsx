@@ -1,10 +1,11 @@
 import React from 'react';
 import { Card, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import image from '/images/placeholder.jpg';
 
-const Event = ({ index, name, price, description, img, nbTickets, nbParticipants, like, onBookEvent, onToggleLike }) => {
+const Event = ({ id, index, name, price, description, img, nbTickets, nbParticipants, like, onBookEvent, onToggleLike, onDeleteEvent }) => {
   const isSoldOut = nbTickets === 0;
+  const navigate = useNavigate();
 
   return (
       <Col md={4} className="mb-4">
@@ -60,7 +61,7 @@ const Event = ({ index, name, price, description, img, nbTickets, nbParticipants
             <Card.Text>
               <strong>Number of participants:</strong> {nbParticipants}
             </Card.Text>
-            <div className="d-flex gap-2">
+            <div className="d-flex gap-2 flex-wrap">
               <Button 
                 variant={like ? "danger" : "info"} 
                 onClick={() => onToggleLike(index)}
@@ -73,6 +74,18 @@ const Event = ({ index, name, price, description, img, nbTickets, nbParticipants
                 disabled={isSoldOut}
               >
                 Book an event
+              </Button>
+              <Button 
+                variant="warning" 
+                onClick={() => navigate(`/events/${id}`)}
+              >
+                Update Event
+              </Button>
+              <Button 
+                variant="danger" 
+                onClick={() => onDeleteEvent(id)}
+              >
+                Delete
               </Button>
             </div>
           </Card.Body>

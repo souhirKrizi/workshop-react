@@ -1,8 +1,10 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import { NavLink, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
 const NavigationBar = () => {
+  const navigate = useNavigate();
+
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
@@ -23,6 +25,9 @@ const NavigationBar = () => {
               Events
             </NavLink>
           </Nav>
+          <Button variant="outline-light" onClick={() => navigate('/add-event')}>
+            Add new Event
+          </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

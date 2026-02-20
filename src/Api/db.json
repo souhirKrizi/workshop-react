@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Festival international de Carthage",
+      "description": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page",
+      "img": "event1.jpg",
+      "price": 30,
+      "nbTickets": 10,
+      "nbParticipants": 10,
+      "like": false
+    },
+    {
+      "id": "2",
+      "name": "Festival de la médina de Tunis",
+      "description": "festival 2026",
+      "img": "event2.jpg",
+      "price": 15,
+      "nbTickets": 7,
+      "nbParticipants": 12,
+      "like": false
+    },
+    {
+      "id": "1813",
+      "name": "souhir ",
+      "description": "azzertyuio",
+      "img": "Capture d'écran 2025-02-28 233348.png",
+      "price": 17,
+      "nbTickets": 9,
+      "nbParticipants": 0,
+      "like": false
+    }
+  ]
+}

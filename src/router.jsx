@@ -5,6 +5,7 @@ import App from './App';
 import NotFound from './Components/NotFound';
 
 const EventDetails = lazy(() => import('./Components/EventDetails'));
+const AddEvent = lazy(() => import('./Components/AddEvent'));
 
 const router = createBrowserRouter([
   {
@@ -20,8 +21,16 @@ const router = createBrowserRouter([
         element: <App />,
       },
       {
-        path: 'events/:name',
+        path: 'events/:id',
         element: <EventDetails />,
+      },
+      {
+        path: 'update-event/:id',
+        element: <EventDetails />,
+      },
+      {
+        path: 'add-event',
+        element: <AddEvent />,
       },
     ],
   },
